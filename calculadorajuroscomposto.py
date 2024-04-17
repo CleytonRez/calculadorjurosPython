@@ -1,0 +1,17 @@
+nome = input("Qual seu Nome?: ")
+print('|------------------------------------------- :) -----------------------------------------|')
+print(" ")
+print(f"Olá {nome}, seja bem vindo a : Calculadora de Juros Compostos!")
+print(" ")
+print('|------------------------------------------- :) -----------------------------------------|')
+print(" ")
+dinheiro_inicial = int(input("Digite a quantidade inicial do investimento: "))
+tempo = int(input("Digite quantos anos você deixara o dinheiro sendo investido: "))
+taxa = float(input("Digite, em decimal, qual a taxa anual de retorno do seu investimento: "))
+
+montante = dinheiro_inicial * (1 + taxa) ** tempo
+montante = round(montante, 2)
+print(" ")
+print('|------------------------------------------- :) -----------------------------------------|')
+print(" ")
+print(f"Parabéns {nome}, ao final do periodo de {tempo} anos com o investimento de R${dinheiro_inicial} você terá R${montante} !  ")
